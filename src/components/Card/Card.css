@@ -1,0 +1,85 @@
+.card {
+  border: none;
+
+  text-decoration: none;
+
+  overflow: hidden;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  border: 1px solid black;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 0px;
+}
+
+.card-title {
+  font-size: 14px;
+  margin: 0;
+  padding-top: 10px;
+  font-weight: 100;
+}
+
+.card-price {
+  color: red;
+  font-weight: bold;
+}
+.current-price {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.mrp {
+  text-decoration: line-through;
+  color: #888;
+  font-weight: 100;
+  font-size: 10px;
+}
+.discount {
+  text-decoration: none;
+  font-weight: 100;
+  font-size: 10px;
+}
+.original-price {
+  color: #888;
+}
+.card-category {
+  color: #888;
+
+  font-size: 15px;
+}
+.basket-icon-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.basket-icon {
+  width: 24px;
+  height: 24px;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.basket-icon-btn:hover .basket-icon {
+  opacity: 1;
+}
+
+@media (max-width: 967px) {
+  .card {
+    pointer-events: none;
+  }
+}

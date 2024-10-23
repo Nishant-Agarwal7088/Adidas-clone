@@ -1,0 +1,38 @@
+.side-panel-image {
+  display: flex;
+  justify-content: center;
+
+}
+
+.logo-sliding-image {
+  height: 60px;
+  width: 70px;
+
+  
+}
+
+.side-panel-content {
+  font-family: sans-serif;
+  line-height: 50px;
+  font-size: 20px;
+  
+}
+.side-panel-content ul {
+   padding: 30px;
+  
+  }
+.side-panel-content ul li img {
+  height: 20px;
+  width: 20px;
+  transform: rotate(270deg);
+ 
+}
+.side-panel-content ul li {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  cursor: pointer;
+}
+.footer{
+    position: sticky;
+}

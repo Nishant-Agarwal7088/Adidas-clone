@@ -1,0 +1,113 @@
+.top {
+  display: grid;
+  grid-template-columns: 0.01fr 0.01fr 0.01fr;
+}
+
+.top p {
+  padding: 5px;
+}
+.top .back {
+  font-weight: bold;
+  font-size: 15px;
+  text-decoration: underline;
+}
+.top .home {
+  font-size: 15px;
+  text-decoration: underline;
+}
+.top .outlet {
+  font-size: 15px;
+}
+sub {
+  font-weight: normal;
+  font-size: 15px;
+  color: rgb(106, 106, 106);
+}
+.start-container {
+  position: relative;
+  left: 100px;
+  top: 20px;
+
+  width: 69%;
+}
+.content .background {
+  background-color: #0071ae;
+  width: 100%;
+  position: relative;
+  height: 170px;
+  top: 130px;
+  z-index: -1;
+}
+
+.adds {
+  display: flex;
+
+  flex-wrap: wrap;
+  padding: 10px;
+  padding-left: 100px;
+
+  gap: 5px;
+  position: relative;
+  bottom: 90px;
+}
+
+.image-item {
+  text-align: center;
+  width: 10%;
+  transition: transform 0.3s ease;
+  background-color: white;
+}
+
+.image-item img {
+  width: 100%;
+  height: auto;
+
+  transition: transform 0.3s ease;
+}
+
+.image-item:hover {
+  transform: translateY(-10px);
+}
+
+.image-item p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+  text-decoration: underline;
+}
+.image-item p:hover {
+  color: white;
+  background-color: black;
+}
+
+@media screen and (max-width: 960px) {
+  .top {
+    display: none;
+  }
+
+  .adds {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .image-item {
+    width: 50%;
+    flex: 0 0 auto;
+    height: auto;
+    margin-right: 10px;
+  }
+
+  .adds::-webkit-scrollbar {
+    display: none;
+  }
+
+  .adds {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .image-item p {
+    display: none;
+  }
+}

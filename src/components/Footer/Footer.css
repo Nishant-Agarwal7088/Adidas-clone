@@ -1,0 +1,161 @@
+.footer {
+  background-color: white;
+  padding: 20px 0;
+  text-align: left;
+  margin-top: 50px;
+}
+
+.footer h2 {
+  margin-left: 160px;
+  padding-bottom: 20px;
+}
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: auto;
+  gap: 10px;
+  justify-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-item {
+  font-size: 16px;
+  color: #333;
+  text-transform: capitalize;
+  padding: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+
+.yellow-strip {
+  margin-top: 50px;
+  background-color: #ede734;
+  width: 100%;
+  height: 150px;
+  z-index: 1000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.yellow-strip-button-container {
+  position: relative;
+}
+.yellow-strip button {
+  border: none;
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  padding: 10px;
+  margin-left: 5px;
+}
+
+.extra-container {
+  display: none;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  gap: 10px;
+}
+
+.extra-item {
+  text-align: center;
+  padding: 10px;
+
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.large-screen-container {
+  background-color: white;
+  padding: 30px 0;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: auto;
+  justify-items: start;
+  text-align: left;
+}
+
+.column-heading {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.column-item {
+  font-size: 16px;
+  color: black;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.column-item:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  background-color: #282c31;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-bottom-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-bottom-links a {
+  font-size: 16px;
+  color: #767677;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.footer-copyright {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .footer-bottom-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 960px) {
+  .extra-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    gap: 10px;
+    justify-items: center;
+    padding: 20px;
+  }
+  .large-screen-container {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .yellow-strip {
+    flex-direction: column;
+  }
+}
