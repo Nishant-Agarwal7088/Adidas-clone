@@ -6,8 +6,8 @@ const shoes = [
     discount: "-30%",
     category: "Men Running",
     color: "3 colours",
-    imageUrl: "/src/assets/images/shoe_1.png",
-    hoverImageUrl: "/src/assets/images/shoe_1_vertical.png",
+    imageUrl: "/src/assets/shoe_1.png",
+    hoverImageUrl: "/src/assets/shoe_1_vertical.png",
   },
   {
     title: "SUPERSTAR SHOES",
@@ -16,8 +16,8 @@ const shoes = [
     discount: "-30%",
     category: "Men Running",
     color: "3 colours",
-    imageUrl: "/src/assets/images/shoe_2.png",
-    hoverImageUrl: "/src/assets/images/shoe_2_vertical.png",
+    imageUrl: "/src/assets/shoe_2.png",
+    hoverImageUrl: "/src/assets/shoe_2_vertical.png",
   },
   {
     title: "AHTOUNDRUN SHOES",
@@ -26,8 +26,8 @@ const shoes = [
     discount: "-50%",
     category: "Men Running",
     color: "3 colours",
-    imageUrl: "/src/assets/images/shoe_3.png",
-    hoverImageUrl: "/src/assets/images/shoe_3_vertical.png",
+    imageUrl: "/src/assets/shoe_3.png",
+    hoverImageUrl: "/src/assets/shoe_3_vertical.png",
   },
   {
     title: "AHTOUNDRUN SHOES",
@@ -36,8 +36,8 @@ const shoes = [
     discount: "-50%",
     category: "Men Running",
     color: "3 colours",
-    imageUrl: "/src/assets/images/shoe_4.png",
-    hoverImageUrl: "/src/assets/images/shoe_4_vertical.png",
+    imageUrl: "/src/assets/shoe_4.png",
+    hoverImageUrl: "/src/assets/shoe_4_vertical.png",
   },
   {
     title: "SUPERSTAR SHOES",
@@ -46,8 +46,8 @@ const shoes = [
     discount: "-30%",
     category: "Men Running",
     color: "3 colours",
-    imageUrl: "/src/assets/images/shoe_5.png",
-    hoverImageUrl: "/src/assets/images/shoe_5_vertical.png",
+    imageUrl: "/src/assets/shoe_5.png",
+    hoverImageUrl: "/src/assets/shoe_5_vertical.png",
   },
   {
     title: "SUPERSTAR SHOES",
@@ -56,8 +56,8 @@ const shoes = [
     discount: "-50%",
     category: "Men Running",
     color: "3 colours",
-    imageUrl: "/src/assets/images/shoe_1.png",
-    hoverImageUrl: "/src/assets/images/shoe_1_vertical.png",
+    imageUrl: "/src/assets/shoe_1.png",
+    hoverImageUrl: "/src/assets/shoe_1_vertical.png",
   },
   {
     title: "AHTOUNDRUN SHOES",
@@ -66,8 +66,8 @@ const shoes = [
     discount: "-50%",
     category: "Men Running",
     color: "3 colours",
-    imageUrl: "/src/assets/images/shoe_2.png",
-    hoverImageUrl: "/src/assets/images/shoe_2_vertical.png",
+    imageUrl: "/src/assets/shoe_2.png",
+    hoverImageUrl: "/src/assets/shoe_2_vertical.png",
   },
   {
     title: "SUPERSTAR SHOES",
@@ -76,8 +76,8 @@ const shoes = [
     discount: "-50%",
     category: "Men Running",
     color: "3 colours",
-    imageUrl: "/src/assets/images/shoe_3.png",
-    hoverImageUrl: "/src/assets/images/shoe_3_vertical.png",
+    imageUrl: "/src/assets/shoe_3.png",
+    hoverImageUrl: "/src/assets/shoe_3_vertical.png",
   },
 ];
 
