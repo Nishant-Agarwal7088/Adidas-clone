@@ -6,3 +6,4 @@
 -Then open the link
 
 Note:- The project is made via Vite
+https://adidassclonee.netlify.app/
