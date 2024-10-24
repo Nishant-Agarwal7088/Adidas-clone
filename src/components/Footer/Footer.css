@@ -149,6 +149,15 @@
   .large-screen-container {
     display: none;
   }
+  .footer h2{
+    font-size: 18px;
+    margin-left: 5px;
+  }
+
+  .footer-item {
+    margin-left: 10px;
+    padding-right: 0px;
+}
 }
 
 @media (max-width: 768px) {
@@ -157,5 +166,8 @@
   }
   .yellow-strip {
     flex-direction: column;
+  }
+  .yellow-strip h1{
+    margin-left: 5px;
   }
 }

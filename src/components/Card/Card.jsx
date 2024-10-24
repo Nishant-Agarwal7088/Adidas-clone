@@ -3,6 +3,7 @@ import "./Card.css";
 import "./ShoeList.css";
 import { assets } from "../../assets/assets";
 
+
 const Card = ({
   title,
   price,

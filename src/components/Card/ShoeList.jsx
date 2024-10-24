@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "./Card";
-import shoes from "./shoeData";
+import shoes from "../../assets/shoeData";
+
 import "./Card.css";
 import "./ShoeList.css";
 

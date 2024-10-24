@@ -34,18 +34,25 @@ export const assets = {
     image_2,
     image_3,
     image_4,
-    image_5,
-    shoe_1,
-    shoe_2,
-    shoe_3,
-    shoe_1_vertical,
-    shoe_2_vertical,
-    shoe_3_vertical,
-    shoe_4,
-    shoe_5,
-    shoe_4_vertical,
-    shoe_5_vertical
+    image_5
  
 }
+
+const images={
+  shoe_1,
+  shoe_2,
+  shoe_3,
+  shoe_1_vertical,
+  shoe_2_vertical,
+  shoe_3_vertical,
+  shoe_4,
+  shoe_5,
+  shoe_4_vertical,
+  shoe_5_vertical
+};
+export default images;
+  
+  
+  
 
 
