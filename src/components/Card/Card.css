@@ -79,8 +79,7 @@
 }
 
 @media (max-width: 967px) {
-  .card {
-    pointer-events: none;
-    cursor: pointer;
+  .card:hover {
+    transform: none;
   }
 }
