@@ -95,7 +95,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="footer">
+    <footer className="footer" style={{height:"1105px"}}>
       <h2>OUR CLOTHING AND SHOE CATEGORIES</h2>
       <div className="footer-container">
         {categories.map((category, index) => (

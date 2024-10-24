@@ -1,0 +1,69 @@
+.dropdown-menu {
+    font-family: sans-serif;
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 80px; /* Position below the navbar */
+    left: 0;
+    width: 100%; /* Half of the screen width */
+    background-color: #fff;
+   
+    padding: 20px;
+
+    z-index: 1000;
+    cursor:default;
+  }
+ 
+
+
+
+ 
+  
+  
+  
+  .dropdown-columns {
+    display: flex;
+    width: 100%;
+  }
+  
+  .dropdown-column {
+    flex: 1; /* Each column takes equal space */
+    padding: 0 10px; /* Padding between columns */
+  }
+  
+  .dropdown-column h3 {
+    margin: 0 0 10px; /* Space below the heading */
+  }
+  
+  .row-items {
+    display: flex; /* Use flexbox for row layout */
+    flex-direction: column; /* Stack items vertically */
+    gap: 5px; /* Space between items */
+  }
+  
+  .row-items .row-item {
+    display: block; /* Ensure each item is a block element */
+  }
+  
+  .row-items a {
+    text-decoration: none;
+    color: #333;
+ 
+     /* Optional: Add a border for better visibility */
+    border-radius: 4px; /* Optional: Rounded corners */
+  }
+  
+  .row-items a:hover {
+    text-decoration: underline; /* Optional: Hover effect */
+  }
+  
+  .column-content {
+    margin-top: 10px; /* Space above the text */
+    font-size: 0.9em; /* Smaller font size for the content */
+    color: #555; /* Color for the text */
+  }
+  
+  /* Show dropdown on hover */
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  

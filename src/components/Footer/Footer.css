@@ -52,6 +52,10 @@
   padding: 10px;
   margin-left: 5px;
 }
+.yellow-strip button:hover {
+  transition: 0.3s ease-in-out;
+  color: #8b8b8b;
+}
 
 .extra-container {
   display: none;

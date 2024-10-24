@@ -4,3 +4,5 @@
 -Then npm install react-router-dom, react
 -Then type npm run dev
 -Then open the link
+
+Note:- The project is made via Vite

@@ -54,7 +54,7 @@ const Start = () => {
           <a href="https://www.adidas.co.in/men-outlet">
               <img src={assets.image_5} alt="" />
           </a>
-              <p>FLAT 50% OFF + EXTRA 20% OFF ON ORDERS ABOVE INR 4999</p>
+              <p>FLAT 50% OFF + <br /> EXTRA 20% OFF <br /> ON ORDERS ABOVE <br /> INR 4999</p>
             </div>
             
         </div>

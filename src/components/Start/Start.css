@@ -90,6 +90,7 @@ sub {
     flex-wrap: nowrap;
     overflow-x: auto;
     white-space: nowrap;
+    padding-left: 0;
   }
 
   .image-item {
@@ -107,7 +108,8 @@ sub {
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
-  .image-item p {
-    display: none;
+  .image-item:hover {
+    transform: translateY(0px);
   }
+  
 }

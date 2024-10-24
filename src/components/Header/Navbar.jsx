@@ -1,14 +1,29 @@
 import React, { useState } from "react";
 import { assets } from "../../assets/assets";
+import DropdownMenu from './Dropdown';
 import SlidingPage from './Sliding';
+import SlidingSearch from './Slidingsearch';
 import "./Navbar.css";
-import {Link} from 'react-router-dom'
+
 
 const Navbar = () => {
+
+  const [isHovered, setIsHovered] = useState(false);
+
   const [isSlidingPageOpen, setIsSlidingPageOpen] = useState(false);
 
   const toggleSlidingPage = () => {
     setIsSlidingPageOpen(!isSlidingPageOpen);
+  };
+
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
+
+  const handleSearchClick = () => {
+    setIsSearchOpen(true);
+  };
+
+  const handleClose = () => {
+    setIsSearchOpen(false);
   };
 
   return (
@@ -28,19 +43,39 @@ const Navbar = () => {
         </div>
         <div className="dropdown-container">
           <ul>
-            <li>
+          <li 
+          className="dropdown" 
+          onMouseEnter={() => setIsHovered(true)} 
+          onMouseLeave={() => setIsHovered(false)}
+        >
               <b>MEN</b>
+              <DropdownMenu isHovered={isHovered} />
             </li>
-            <li>
+            <li className="dropdown" 
+          onMouseEnter={() => setIsHovered(true)} 
+          onMouseLeave={() => setIsHovered(false)}>
               <b>WOMEN</b>
+              <DropdownMenu isHovered={isHovered} />
             </li>
-            <li>
+            <li className="dropdown" 
+          onMouseEnter={() => setIsHovered(true)} 
+          onMouseLeave={() => setIsHovered(false)}>
               <b>KIDS</b>
+              <DropdownMenu isHovered={isHovered} />
             </li>
-            <li>SPORTS</li>
-            <li>LIFESTYLE</li>
-            <li>
+            <li className="dropdown" 
+          onMouseEnter={() => setIsHovered(true)} 
+          onMouseLeave={() => setIsHovered(false)}>SPORTS
+          <DropdownMenu isHovered={isHovered} /></li>
+            <li className="dropdown" 
+          onMouseEnter={() => setIsHovered(true)} 
+          onMouseLeave={() => setIsHovered(false)}>LIFESTYLE
+          <DropdownMenu isHovered={isHovered} /></li>
+            <li  className="dropdown" 
+          onMouseEnter={() => setIsHovered(true)} 
+          onMouseLeave={() => setIsHovered(false)}>
               <b>OUTLET</b>
+          <DropdownMenu isHovered={isHovered} />
             </li>
           </ul>
         </div>
@@ -58,10 +93,11 @@ const Navbar = () => {
             <img className="search" src={assets.search} alt="" />
             <img className="user" src={assets.user} alt="" />
             <img className="heart" src={assets.heart} alt="" />
-            <img className="search-middle" src={assets.search} alt="" />
+            <img onClick={handleSearchClick} className="search-middle" src={assets.search} alt="" />
             <a href="https://www.adidas.co.in/cart" target="_blank" rel="noopener noreferrer"> <img className="basket" src={assets.basket} alt="" /></a>
           </div>
         </div>
+        <SlidingSearch isOpen={isSearchOpen} onClose={handleClose} />
         <SlidingPage isOpen={isSlidingPageOpen} toggleSlidingPage={toggleSlidingPage} />
       </div>
       <hr />
